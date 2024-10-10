@@ -1,0 +1,330 @@
+
+:root {
+    --cor-de-fundo: #f4f4f4;
+    --cor-de-fundo-menu: #fcf5e7;
+    --cor-do-link: #000000;
+}
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: #333;
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 2.0;
+}
+
+h1, h2, h3 {
+    color: #1e1e1e;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+ol, ul, li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+ul, li .navegacao__profissional{
+    font-size: 200px;
+}
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 20px;
+    background-color: #bdbdbd;
+    
+}
+
+.cabecalho__logo {
+    max-width: 60px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.menu__profissional{
+    background-color: #bdbdbd;
+    width: 100%;
+    align-items: center;
+    font-size: 4rem;
+    
+}
+
+.menu__profissional {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.menu__elemento a :hover{
+    color: #ff5139;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 0%;
+    text-align:justify;
+}
+
+.apresentacao__foto {
+    border-radius: 50%;
+   max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+    
+}
+
+.apresentacao__conteiner {
+    flex: 1;
+}
+
+
+.dados__conteiner{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.redes__elemento a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.redes__elemento a:hover {
+    color: #ff5139;
+}
+
+
+.experiencia{
+    display: inline;
+    
+}
+
+
+.experiencia__conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Cor de fundo ligeiramente mais clara */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .experiencia__conteiner {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+.formacao__lista{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.formacao__elemento{
+    text-align: center;
+    flex-basis: 400px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+  
+}
+button {
+    background-color:#606577 ; /* Cor de fundo bege */
+    border: none;
+    border-radius: 1.5rem;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-blockflex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;  
+  }
+   
+button:hover { /* Style on hover */
+    background-color: #ff5139; /* Darker shade on hover */
+  }
+
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+
+.habilidades__lista,
+.hobbies__lista {
+    display: flex;
+   
+    
+}
+
+.habilidades__elemento,
+.hobbies__elemento {
+    text-align: center;
+    flex-basis: 400px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.habilidades__icone,
+.hobbies__icone {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+/* Estilos gerais para a seção */
+.contato {
+    text-align: left;
+    background-color: #f4f4f4; 
+    padding: 10px;
+  }
+  
+  /* Título da seção */
+  .contato__titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Campos do formulário */
+  
+  .contato form {
+    display: flex; 
+   flex-direction: column;
+    gap: 10px; /* Add spacing between form elements */
+    width: 50%;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .contato input[type="text"],
+  .contato input[type="email"] {
+    width: 50%; 
+    padding: 10px; 
+    border: 1px solid #ccc; /* Basic border for visual cues */
+    border-radius: 3px; /* Rounded corners for a smoother look */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+
+  .contato textarea {
+    width: 50%; 
+    min-height: 250px; /* Set minimum height for better usability */
+    padding: 10px; /* Add padding for better user experience */
+    border: 1px solid #ccc; /* Basic border for visual cues */
+    border-radius: 3px; /* Rounded corners for a smoother look */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+
+  /* Botão */
+  .contato button[type="submit"]{
+    background-color:#606577; 
+    border: none;
+    border-radius: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer; 
+    padding: 15px 32px;
+    width: 150px;
+  }
+ 
+ 
+
+  .contato button[type="submit"]:hover { /* Style on hover */
+    background-color: #ff5139; /* Darker shade on hover */
+  }
+
+  footer {
+    background-color: #bdbdbd; 
+    color:#333; 
+    text-align: center; 
+    padding: 10px; 
+    position: absolute;
+    width: 100%;
+ 
+    
+   
+}
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
+
